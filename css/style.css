@@ -1,0 +1,197 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto; /* по центру */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between; /* расположение от края до края*/
+    align-items: center;
+    box-sizing: border-box; /* вычитание padding и border из размеров блока*/
+    font-weight: 700; /* жирность текста */
+}
+
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f7f7f7;
+}
+
+.wrap{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto; /* по центру */
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.nav{
+    list-style-type: none; /* убрать формат списка с точками */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* элементы в ряд */ 
+    font-size: 14px;
+}
+
+.nav>li{
+    margin-left: 15px ;
+}
+
+.nav>li>a{
+    text-decoration: none;
+    color: #202020;
+}
+.nav_btn{
+    background-color: #5528FF;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo_img{
+    display: block; /* отразить изображение */
+    width: 58px;
+    height: 58px;
+    background-image: url(../img/logo.svg);
+    margin-right: 20px;
+}
+
+.logo_text{
+    font-size: 24px;
+    color: #202020;
+}
+
+.title_main{
+    font-size: 56px;
+    color: #202020;
+    font-weight: 700;
+}
+
+.text_main{
+    font-size: 32px;
+    line-height: 1.5;
+    color: #4f4f4f;
+}
+
+.button{
+    background-color: #5528FF;
+    border-radius: 10px;
+    padding: 10px 45px;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+}
+
+.page{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.page_top{
+    border-top: 1px solid #c2c2c2;
+}
+
+.page h2{
+    position: absolute;
+    top: -24px;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #fff;
+    padding: 5px 15px;
+    color:  #c2c2c2;
+}
+
+.services{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr; /* 2 строки по 2 блока */
+    }
+
+.services_item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.services_img{
+    flex-basis: 120px;
+    text-align: center;
+}
+
+.services_text{
+    flex-basis: calc(100% - 120px);
+}
+
+.services h3{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.services p{
+    font-size: 14px;
+    color: #b2b2b2;
+    line-height: 1.5;   
+}
+
+.clients{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 25%);
+    text-align: center;
+    grid-row-gap: 40px;
+}
+
+.team{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 33%);
+    grid-row-gap: 40px;
+}
+
+.team_item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.team_item{
+    margin-right: 20px;
+}
+
+.team_item>div{
+    flex-basis: calc(100% - 120px)
+}
+
+.box_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+}
+
+.social>li{
+    margin-left: 15px;
+}
+
+.social>li>a{
+    text-decoration: none;
+    color: #b2b2b2;
+    font-size: 24px;
+}
